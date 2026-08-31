@@ -1,0 +1,45 @@
+
+<header class="site-header">
+    <div class="header-content">
+        <div class="header-top">
+            <div class="site-title">L. Gerardo Nuñez</div>
+
+            <button class="menu-button" aria-label="Open menu">
+                <span class="menu-icon">☰</span>
+                <span class="close-icon">×</span>
+            </button>
+        </div>
+
+        <nav class="desktop-nav">
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="/research/">Research</a>
+            <a href="/publications/">Publications</a>
+            <a href="/notes/">Notes</a>
+            <a href="/activities/">Academic Activities</a>
+            <a href="/cv/">CV</a>
+        </nav>
+
+        <nav class="mobile-nav">
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="/research/">Research</a>
+            <a href="/publications/">Publications</a>
+            <a href="/notes/">Notes</a>
+            <a href="/activities/">Academic Activities</a>
+            <a href="/cv/">CV</a>
+        </nav>
+    </div>
+</header>
+
+<script>
+    const button = document.querySelector(".menu-button");
+    const menu = document.querySelector(".mobile-nav");
+    const header = document.querySelector(".site-header");
+
+    button?.addEventListener("click", () => {
+        menu?.classList.toggle("open");
+        button?.classList.toggle("open");
+        header?.classList.toggle("menu-open");
+    });
+</script>
